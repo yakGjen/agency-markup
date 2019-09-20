@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Test page">
-    <meta name="Keywords" content="test, page">
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
@@ -18,23 +17,28 @@
             </p>
           </div>
           <nav class="menu header-navigation__item">
-            <ul class="menu__list">
+            <ul class="menu__list menu_hide">
               <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
+                <a href="#" class="home-nav menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">About Us</a>
+                <a href="#" class="about-nav menu__link">About Us</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Offer</a>
+                <a href="#" class="offer-nav menu__link">Offer</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Portfolio</a>
+                <a href="#" class="portfolio-nav menu__link">Portfolio</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Contacts</a>
+                <a href="#" class="contacts-nav menu__link">Contacts</a>
               </li>
             </ul>
+            <div class="burger burger_hide">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
           </nav>
         </section>
         <section class="header-feedback">
@@ -49,8 +53,107 @@
           </button>
         </section>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+        <section class="best-work main__item">
+          <div class="best-design best-work__item best-work__left">
+            <h2 class="best-header"><span>Best</span>Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eos incidunt perspiciatis doloribus quas consequuntur
+            </p>
+            <button class="header-feedback__button">Ask for price</button>
+          </div>
+          <div class="best-code best-work__item best-work__right">
+            <h2 class="best-header"><span>Best</span>Code</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore culpa nesciunt id cum ratione vitae necessitatibus
+            </p>
+            <button class="header-feedback__button">Ask for price</button>
+          </div>
+        </section>
+        <section class="specialization main__item">
+          <h2>What we do?</h2>
+          <div class="categories">
+            <div class="category categories__item">
+              <img src="./assets/web-design.png" alt="design">
+              <div class="category__text">
+                <h3>Web design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="category categories__item">
+              <img src="./assets/web-applications.png" alt="applications">
+              <div class="category__text">
+                <h3>Web Applications</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="category categories__item">
+              <img src="./assets/digital.png" alt="digital">
+              <div class="category__text">
+                <h3>Digital paiting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="category categories__item">
+              <img src="./assets/desktop.png" alt="desktop">
+              <div class="category__text">
+                <h3>Desktop Aplications</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <button class="header-feedback__button">Ask for price</button>
+        </section>
+        <section class="portfolio main__item">
+          <img class="portfolio__item" src="./assets/portfolio-item-1.png" alt="portfolio_1">
+          <img class="portfolio__item" src="./assets/portfolio-item-2.png" alt="portfolio_2">
+          <img class="portfolio__item" src="./assets/portfolio-item-3.png" alt="portfolio_3">
+        </section>
+        <section class="about main__item">
+          <h2 class="about__item">About Us!</h2>
+          <p class="about__item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam quo hic
+          </p>
+          <div class="team about__item">
+            <div class="person team__item">
+              <img src="./assets/person-1.png" alt="person-1">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="person team__item">
+              <img src="./assets/person-2.png" alt="person-1">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="person team__item">
+              <img src="./assets/person-3.png" alt="person-1">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="person team__item">
+              <img src="./assets/person-4.png" alt="person-1">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <button class="about__item header-feedback__button">Whatch more</button>
+        </section>
+        <section class="map main__item">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9401.82413917126!2d27.554440730620126!3d53.905871770470355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1568991412010!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+      </main>
+      <footer class="footer">
+        &copy 2019
+      </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

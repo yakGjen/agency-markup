@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Raleway;
+  src: url(assets/fonts/Raleway-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@ body {
 .wrapper {
   max-width: 1900px;
   margin: 0 auto;
+  font-family: raleway;
 }
 
 .header {
@@ -23,11 +29,11 @@ body {
 .header-navigation__item {
   width: 50%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .logo .logo__text {
-  margin-left: 40px;
   font-size: 140%;
 }
 
@@ -51,6 +57,33 @@ body {
 }
 
 
+.burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #000000;
+  box-sizing: border-box;
+  transition: all 0.2s 0s linear;
+}
+
+.burger > div {
+  width: 20px;
+  margin: 2px 0 2px 0;
+  border: solid 1px #000000;
+}
+
+.burger_hide {
+  display: none;
+}
+
+.burger_rotate {
+  transform: rotate(90deg);
+}
+
+
 .header-feedback {
   display: flex;
   flex-direction: column;
@@ -66,7 +99,7 @@ body {
   margin: 0;
 }
 
-.header-feedback .header-feedback__button {
+.header-feedback__button {
   margin-top: 50px;
   padding: 5px 20px;
   border: none;
@@ -74,4 +107,254 @@ body {
   background: linear-gradient(to left, #b90084, #49007c);
   color: #ffffff;
   cursor: pointer;
+}
+
+
+
+
+
+.main__item {
+  display: flex;
+}
+
+.best-work {
+  color: #ffffff;
+}
+
+.best-work__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.best-design {
+  width: 50%;
+  background-image: url(assets/under-header-1.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.best-code {
+  width: 50%;
+  background-image: url(assets/under-header-2.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.best-work__left {
+  padding: 20px 80px 20px 200px;
+}
+.best-work__right {
+  padding: 20px 200px 20px 80px;
+}
+
+.best-header > span {
+  font-weight: normal;
+}
+
+
+
+.specialization {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories__item {
+  width: 50%;
+  margin: 30px 0;
+}
+
+.category {
+  display: flex;
+}
+
+.category > img {
+  width: 120px;
+  height: 95px;
+}
+
+.category__text {
+  margin-left: 20px;
+}
+
+
+
+.portfolio__item {
+  width: 33.3%;
+}
+
+
+.about {
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  background-image: url(assets/about-background.png);
+  background-size: 100% 100%;
+}
+.about__item {
+  margin: 40px auto;
+}
+.about > p {
+  width: 50%;
+  margin: 0;
+  text-align: center;
+}
+.team {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team__item {
+  width: calc(25% - 80px);
+  margin: 0 40px;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__item > img {
+  width: 132px;
+  height: 132px;
+}
+.team__item > p {
+  text-align: center;
+}
+
+
+.map > iframe {
+  width: 100% !important;
+}
+
+.footer {
+  padding: 20px;
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+  .team {
+    flex-wrap: wrap;
+  }
+  .team__item {
+    /*margin: 0 30px;*/
+    margin: 0;
+    width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header {
+    min-height: 400px;
+  }
+  .header-navigation {
+    flex-wrap: wrap;
+  }
+  .header-navigation__item {
+    width: 100%;
+  }
+  .menu .menu__list {
+    padding: 0;
+  }
+  
+  .header-feedback .header-feedback__header {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  
+  .best-work__left {
+    padding: 20px 80px 20px 50px;
+  }
+  .best-work__right {
+    padding: 20px 50px 20px 80px;
+  }
+  
+  
+  .categories {
+    width: 90%;
+  }
+  .categories__item {
+    width: 100%;
+  }
+  
+  .about {
+    background-size: cover;
+  }
+  .about__item {
+    margin: 15px auto;
+  }
+  .team__item {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .best-work__left {
+    padding: 20px 50px 20px 30px;
+  }
+  .best-work__right {
+    padding: 20px 30px 20px 50px;
+  }
+}
+
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .header-navigation__item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .menu .menu_hide {
+    display: none;
+  }
+  .burger_hide {
+    display: flex;
+  }
+  
+  .main__item {
+    flex-wrap: wrap;
+  }
+  
+  .best-design,
+  .best-code {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 410px) {
+  .header-feedback {
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .team__item > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+  
 }
